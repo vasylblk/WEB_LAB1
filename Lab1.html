@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Біографія Роберта Дауні Молодшого</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li { /* Вирівнює текст елементів у списку*/
+            text-align: left; 
+            margin-left: 20px;
+        }
+
+        .photo-container {
+            display: flex; /*Розташування по горизонталі*/
+            justify-content: center; /*Вирівнювання по центру*/
+        }
+
+        .photo-container img { /*Розташування зоображень*/
+            margin: 20px; /* відступи */
+            width: 400px; /* розмір ширини */
+            height: 500px; /* висота */
+        }
+
+        /* Стилі для фото та посилання */
+        .photo-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; /* Позиція посилання на всьому фото 2 */
+            background-color: rgba(255, 255, 255, 0); /* Прозорий фон */
+            cursor: pointer;
+        }
+
+        .photo-overlay:hover {
+            background-color: rgba(255, 255, 255, 0.5); /* Колір фону при наведенні */
+        }
+
+        /* Стилі для фото контейнера */
+        .photo-wrapper {
+            position: relative;
+        }
+
+        .photo-wrapper img {
+            max-width: 100%;
+            height: 500;
+            cursor: pointer;
+        }
+
+        .photo-wrapper:nth-child(3) .photo-overlay {
+            left: 50%;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="#bio">Біографія</a> | <a href="#films">Фільми</a> | <a href="#photos">Фото</a> | <a href="#awards">Фільмографія</a> | <a href="#contacts">Контакти</a></h1>
+    
+    <h2 id="bio">******************<br>Біографія<br>******************</h2>
+    <p><strong>Ро́берт Джон Да́уні-моло́дший</strong> (англ. Robert John Downey Jr.; нар. 4 квітня 1965, Нью-Йорк, США) — американський актор, продюсер і музикант. Став широко відомий після релізу байопіку «Чаплін», в якому виконав головну роль коміка Чарлі Чапліна. Дворазовий номінант на премію «Оскар» (1993, 2009), дворазовий лауреат золотого глобуса (2001, 2010) і володар премії BAFTA (1993). Почав акторську кар'єру ще дитиною, зігравши у фільмі свого батька «Загін» (1970). Ближче до початку 1990-х Дауні став популярним актором, зокрема, завдяки ролям у фільмах «Ейр Америка» (1990), «Велика піна» (1991) і «Природжені вбивці» (1994). Найбільш відомою й успішною роллю Роберта в XX столітті вважається роль Чарлі Чапліна в однойменному байопіку Річарда Аттенборо, що принесла йому премію BAFTA і першу номінацію на «Оскар».</p>
+    <p><strong>Улюблена цитата:</strong> <em>Дуже важливо добре пам'ятати ті часи, коли ти жив у бруді. Ніколи не можна забувати своє минуле, хоч би яким воно було. Так що якщо ти виріс із бруду - зберігай спогади про це все життя.</em></p>
+
+    <h2 id="films">******************<br>Фільми<br>******************</h2>
+    <ol>
+        <li>Шерлок Холмс</li>
+        <li>Залізна людина</li>
+        <li>Оппенгеймер</li>
+        <li>Месники</li>
+        <li>Чорна вдова</li>
+        <li>Дулітл</li>
+        <li>Неймовірний Халк</li>
+        <li>Гріффіни</li>
+        <li>Природжені вбивці</li>
+    </ol>
+    
+
+    <hr> 
+
+    <h2 id="photos">******************<br>Фото<br>******************</h2>
+    <div class="photo-container">
+        <div class="photo-wrapper">
+            <a href="https://uk.wikipedia.org/wiki/Роберт_Дауні-молодший">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Robert_Downey_Jr_2014_Comic_Con_%28cropped%29.jpg/250px-Robert_Downey_Jr_2014_Comic_Con_%28cropped%29.jpg" alt="Фото 1">
+            </a>
+        </div>
+        <div class="photo-wrapper">
+            <a href="https://uk.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%94%D0%B0%D1%83%D0%BD%D1%96_(%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%88%D0%B8%D0%B9)" target="_blank">
+                <img src="https://static.kinoafisha.info/k/persons/1080x1920/upload/persons/699459246406.jpg" alt="Фото 2 (посилання на Вікіпедію)">
+                <div class="photo-overlay"></div>
+            </a>
+        </div>
+        <div class="photo-wrapper">
+            <a href="https://www.youtube.com/watch?v=Kt_knZCeO7I" target="_blank">
+                <img src="https://s.afisha.ru/mediastorage/64/36/573be2321d8d49ba9a326cdb3664.jpg" alt="Фото 3 (посилання на відео)">
+                <div class="photo-overlay"></div>
+            </a>
+        </div>
+    </div>
+
+    <h2 id="awards">******************<br>Фільмографія<br>******************</h2>
+    <table border="1" style="border-collapse: collapse; width: 50%;">
+        <tr>
+            <th style="padding: 8px;">Назва фільму</th>
+            <th style="padding: 8px;">Роль</th>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Шерлок Холмс 2</td>
+            <td style="padding: 8px;">Шерлок Холмс</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Опенгеймер</td>
+            <td style="padding: 8px;">Льюїс Штраус</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Чорна вдова</td>
+            <td style="padding: 8px;" rowspan="2">Тоні Старк (Залізна людина)</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Людина павук</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Дулітл</td>
+            <td style="padding: 8px;">Доктор Дулітл</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Месники</td>
+            <td style="padding: 8px;" rowspan="2">Тоні Старк (Залізна людина)</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Залізна людина</td>
+            
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Кухар на колесах</td>
+            <td style="padding: 8px;">Марвін</td>
+        </tr>
+    </table>
+    
+    
+
+    <h2 id="contacts">******************<br>Контакти<br>******************</h2>
+    <a href="https://www.instagram.com/robertdowneyjr/" target="_blank">Інстаграм</a>
+<a href="https://twitter.com/RobertDowneyJr" target="_blank">Твітер</a>
+
+    </a>
+    <p>Email: <a href="mailto:bulak.vasyl@lll.kpi">bulak.vasyl@lll.kpi.ua</a></p>
+<p>Телефон: <a href="tel:+380969493377">+380 (96) 949-33-77</a></p>
+</body>
+</html>
